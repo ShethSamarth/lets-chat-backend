@@ -1,0 +1,24 @@
+{
+  "name": "backend",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "start": "bun src/index.ts",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push"
+  },
+  "dependencies": {
+    "@hono/zod-validator": "^0.2.2",
+    "@prisma/client": "^5.18.0",
+    "bcryptjs": "^2.4.3",
+    "hono": "^4.4.7",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^6.9.14"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/bun": "latest",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/nodemailer": "^6.4.15",
+    "prisma": "^5.18.0"
+  }
+}
